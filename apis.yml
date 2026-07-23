@@ -1,8 +1,25 @@
 aid: baletu
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/baletu.png
 name: Baletu
-description: 'Baletu is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Baletu (巴乐兔) is a landlord-direct online residential rental platform operated by
+  Shanghai Wanjian Information Technology Co., Ltd. Founded in 2012 and based in Shanghai, it lets
+  tenants rent apartments directly from landlords with monthly-payment ("月付") options, reducing
+  agency fees. The platform spans first-tier Chinese cities including Beijing, Shanghai, and Shenzhen
+  plus more than ten second-tier cities, listing over one million properties. Baletu is a consumer
+  proptech company backed by DCM Ventures, Tiantu Capital, Nan Fung Group, and ZWC Partners, having
+  raised roughly $140M through a 2018 Series C. It ships consumer iOS/Android apps and a partner
+  portal; it does not publish a public developer API program (api.baletu.com serves its own apps).'
 url: https://raw.githubusercontent.com/api-evangelist/baletu/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer
+- Real Estate
+- Rental Housing
+- Proptech
+- Marketplace
+- China
+- Mobile
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/baletu-domain-security.yml
 - type: Website
-  url: http://baletu.com/
+  url: https://baletu.com/
+- type: Login
+  url: http://partner.baletu.com/login
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
